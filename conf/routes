@@ -1,0 +1,13 @@
+GET     /               controllers.HomeController.index
+
+GET     /artist             v1.post.PostController.getAllArtist
+GET     /artist/id/:id      v1.post.PostController.getArtistById(id)
+PUT     /artist/add         v1.post.PostController.addArtist
+DELETE  /artist/delete/:id  v1.post.PostController.deleteArtistById(id)
+
+GET     /song               v1.post.PostController.getAllSongs
+GET     /song/id/:id        v1.post.PostController.getSongById(id)
+PUT     /song/add           v1.post.PostController.addSong
+DELETE  /song/delete/:id    v1.post.PostController.deleteSongById(id)
+
+POST    /mapsongtoartist    v1.post.PostController.updateSong
